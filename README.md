@@ -18,7 +18,7 @@ To use this repository, you need the following installed locally:
 - [npm](https://www.npmjs.com/)
 - [Go](https://go.dev/)
 - [Hugo (Extended version)](https://gohugo.io/)
-- A container runtime, like [Docker](https://www.docker.com/).
+- A container runtime, like [Docker](https://www.docker.dev/).
 
 > [!NOTE]
 Make sure to install the Hugo extended version specified by the `HUGO_VERSION` environment variable in the [`netlify.toml`](netlify.toml#L11) file.
@@ -70,7 +70,7 @@ make container-serve segments=en,ko
 
 If you see errors, it probably means that the Hugo container did not have enough computing resources available. To solve it, increase the amount of allowed CPU and memory usage for Docker on your machine ([macOS](https://docs.docker.com/desktop/settings/mac/) and [Windows](https://docs.docker.com/desktop/settings/windows/)).
 
-Open up your browser to <http://localhost:1313> to view the website. As you make changes to the source files, Hugo updates the website and forces a browser refresh.
+Open up your browser to <http://localhost:8080> to view the website. As you make changes to the source files, Hugo updates the website and forces a browser refresh.
 
 ## Running the website locally using Hugo
 
@@ -95,12 +95,12 @@ To install dependencies, deploy and test the site locally, run:
 
 - For Windows (PowerShell)
 
-  ```powershell
+  ```ps
   npm ci
   hugo.exe server --buildFuture --environment development
   ```
 
-This will start the local Hugo server on port 1313. Open up your browser to <http://localhost:1313> to view the website. As you make changes to the source files, Hugo updates the website and forces a browser refresh.
+This will start the local Hugo server on port 8081. Open up your browser to <http://localhost:8081> to view the website. As you make changes to the source files, Hugo updates the website and forces a browser refresh.
 
 
 ## Building the API reference pages
